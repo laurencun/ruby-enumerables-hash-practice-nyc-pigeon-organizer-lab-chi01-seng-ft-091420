@@ -7,13 +7,12 @@ def nyc_pigeon_organizer(data)
       names.each do |name|
         if !final_array[name]
           final_array[name] = {}
-        end
+       end
         if !final_array[name][k]
           final_array[name][k] = []
-        end
+       end
         final_array[name][k].push(inner_key.to_s)
-    end
+      end
     end
   end
-   # binding.pry
 end
